@@ -1,14 +1,14 @@
-// https://github.com/donwa/goindex/blob/master/使用及免责协议.md
+// https://github.com/donwa/goindex/blob/master/使用及免責協議.md
 
 var authConfig = {
-    "siteName": "GoIndex", // 网站名称
-    "root_pass": "index",  // 根目录密码，优先于.password
+    "siteName": "GoIndex", // 網站名稱
+    "root_pass": "index",  // 根目錄密碼，優先於.password
     "version" : "1.0.6", // 程序版本
     "theme" : "material", // material  classic 
     "client_id": "202264815644.apps.googleusercontent.com",
     "client_secret": "X4Z3ca8xfWDb1Voo-F9a7ZxJ",
-    "refresh_token": "", // 授权 token
-    "root": "root" // 根目录ID
+    "refresh_token": "", // 授權 token
+    "root": "root" // 根目錄ID
 };
 
 var gd;
@@ -162,7 +162,7 @@ class googleDrive {
       return obj.files[0];
     }
 
-    // 通过reqeust cache 来缓存
+    // 通過reqeust cache 來緩存
     async list(path){
       if (gd.cache == undefined) {
         gd.cache = {};
